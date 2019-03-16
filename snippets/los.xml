@@ -7,7 +7,9 @@
 
   <!-- External -->
   <project path="external/chromium-webview" name="android_external_chromium-webview" remote="los" revision="lineage-16.0" groups="pdk" clone-depth="1" />
-		  
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="los" revision="lineage-16.0" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="los" revision="lineage-16.0" />
+	
   <!-- Hardware -->
   <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="los" revision="lineage-16.0" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="los" revision="lineage-16.0" />
