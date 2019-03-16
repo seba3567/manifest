@@ -58,7 +58,7 @@
   <project path="packages/apps/WeatherClient" name="packages_apps_WeatherClient" remote="descendant" revision="TwoDotOne_ds"/>
 
   <!-- Sepolicy -->
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="descendant" revision="TwoDotOne_ds" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="descendant" revision="TwoDotOne_ds" />
 
   <!-- OpenGApps -->  
   <remote name="opengapps" fetch="https://github.com/opengapps/"  />
