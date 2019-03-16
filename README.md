@@ -8,33 +8,28 @@ Before getting started, please be sure to have the following packages in your OS
 ## Init our repo
 To start your own descendance, begin with:
 
-```repo init -u https://github.com/Descendant/manifest.git -b TwoDotOne```
+```repo init -u https://github.com/DescendantDeviceSpecific/manifest.git -b TwoDotOne_ds```
 
 Then sync it up with:
 
 ```repo sync --force-sync --no-clone-bundle -j$(nproc --all)```
+
+## Sync your device repositories
+
+We've stored them for you [here](https://github.com/descendant-devices), if your device isn't listed, check the paragraph "Contributing".
 
 ## Get at work 
 To begin your build please do as follows:
 
 ```. build/envsetup.sh 
 lunch descendant_codename-buildtype
-mka descendant
+mka bacon
 ```
-## Variants for treble:
-Use ```treble_arm64_avN``` for an ARM64 A build. 
-
-Use ```treble_arm64_bvN``` for an ARM64 AB build. 
-
-Use ```treble_arm_avN``` for an ARM A build. 
-
-Or use ```treble_a64_avN``` for an ARM, 64 Binder build.
-
 ## Contributing 
 We do appreciate contributions to our source. 
 
 In any form. 
 
-If you'd wish to bring-up a device specific image for your device, please, consider heading to our Telegram chat
+If you're considering to contribute, please head to our Telegram chat
 
-([click to visit Descendant website](https://descendant.me/) to find it out) or just PR the necessary commits over our repos.
+([click to visit Descendant website](https://descendant.me/) to find it out) or just PR the necessary commits over my repos.
