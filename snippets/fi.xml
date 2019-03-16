@@ -28,9 +28,6 @@
   <!-- System -->
   <project path="system/qcom" name="android_system_qcom" remote="fi" revision="pie" />
 
-  <!-- Sepolicy -->
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="fi" revision="pie" />
-
   <!-- Vendor -->
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="fi" revision="pie" />
 </manifest>
