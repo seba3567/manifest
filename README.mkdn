@@ -1,0 +1,54 @@
+-----------------------------------------------------------------------------
+
+<p align="center">
+ <img src="https://github.com/seba3567/descendant/blob/master/images/icon2.png" >
+</p>
+
+-----------------------------------------------------------------------------
+<p align="center">
+# Descendant ROM
+</p>
+
+
+[**Dependencies necessary for compile **](https://github.com/seba3567/descendant/blob/master/Dependencies)
+
+
+Init our repo:
+=============
+To start your own descendance, begin with:
+
+```repo init -u https://github.com/DescendantDeviceSpecific/manifest.git -b TwoDotOne_ds```
+
+
+Then to sync up:
+===============
+
+```repo sync --force-sync --no-clone-bundle --no-tags -j$(nproc --all)```
+
+
+
+
+Sync your device repositories:
+=============================
+
+We've stored them for you [here](https://github.com/descendant-devices), if your device isn't listed, check the paragraph "Contributing".
+
+
+Start the build:
+===============
+
+```
+. build/envsetup.sh
+lunch descendant_codename-buildtype
+mka bacon
+```
+
+Contributing:
+============
+We do appreciate contributions to our source.
+
+In any form.
+
+If you're considering to contribute, please head to our Telegram chat
+
+([click to visit Descendant website](https://descendant.me/) to find it out) or just PR the necessary commits over my repos.
