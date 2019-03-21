@@ -12,7 +12,7 @@ To start your own descendance, begin with:
 
 Then sync it up with:
 
-```repo sync --force-sync --no-clone-bundle -j$(nproc --all)```
+```repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --all)```
 
 ## Sync your device repositories
 
@@ -21,7 +21,8 @@ We've stored them for you [here](https://github.com/descendant-devices), if your
 ## Get at work 
 To begin your build please do as follows:
 
-```. build/envsetup.sh 
+```
+. build/envsetup.sh 
 lunch descendant_codename-buildtype
 mka bacon
 ```
