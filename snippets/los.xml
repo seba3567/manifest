@@ -12,6 +12,7 @@
 	
   <!-- Hardware -->
   <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="los" revision="lineage-16.0" />
+  <project path="hardware/qcom/thermal" name="android_hardware_qcom_thermal" remote="los" revision="lineage-16.0" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="los" revision="lineage-16.0" />
   <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" remote="los" revision="lineage-16.0-caf" /> 
   <project path="hardware/ril" name="android_hardware_ril" remote="los" revision="lineage-16.0" />

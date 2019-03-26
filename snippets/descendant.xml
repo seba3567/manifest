@@ -9,7 +9,8 @@
   <include name="snippets/remove.xml" />
 
   <!-- Descendant repos -->
-  <project path="build/make" name="build_make" groups="pdk" remote="descendant" revision="TwoDotOne_ds" >
+  <project path="art" name="art" groups="pdk" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="build/make" name="build_make" groups="pdk" remote="descendant" revision="TwoDotTwo_staging" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -18,48 +19,49 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="descendant" revision="TwoDotOne_ds" >
+  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="descendant" revision="TwoDotTwo_staging" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bionic" name="bionic" groups="pdk" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="development" name="development" groups="pdk-cw-fs,pdk-fs" remote="descendant" revision="TwoDotOne_ds"  />
+  <project path="bionic" name="bionic" groups="pdk" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="development" name="development" groups="pdk-cw-fs,pdk-fs" remote="descendant" revision="TwoDotTwo_staging"  />
 
-  <project path="frameworks/descendant" name="frameworks_descendant" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="vendor/sounds" name="vendor_sounds" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="system/core" name="system_core" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="packages/apps/Utility" name="packages_apps_Utility" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="descendant" revision="TwoDotOne_ds"  />
-  <project path="system/bt" name="system_bt" remote="descendant" revision="TwoDotOne_ds" /> 
-  <project path="system/vold" name="system_vold" remote="descendant" revision="TwoDotOne_ds" /> 
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="descendant" revision="TwoDotOne_ds" /> 
-  <project path="system/netd" name="system_netd" remote="descendant" revision="TwoDotOne_ds" /> 
-  <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="TwoDotOne_ds" /> 
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="TwoDotOne_ds" /> 
-  <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="device/descendant/sepolicy" name="device_descendant_sepolicy" remote="descendant" revision="TwoDotOne_ds" /> 
-  <project path="vendor/themes" name="vendor_themes" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="vendor/support" name="vendor_support" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="descendant" revision="TwoDotOne_ds" />
-  <project path="packages/apps/Gestures" name="packages_apps_Gestures" remote="descendant" revision="TwoDotOne_ds"/>
-  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="descendant" revision="TwoDotOne_ds"/>
-  <project path="packages/apps/Pulse" name="packages_apps_Pulse" remote="descendant" revision="TwoDotOne_ds"/>
-  <project path="packages/apps/CustomDoze" name="packages_apps_CustomDoze" remote="descendant" revision="TwoDotOne_ds"/>
-  <project path="packages/apps/WeatherClient" name="packages_apps_WeatherClient" remote="descendant" revision="TwoDotOne_ds"/>
+  <project path="frameworks/descendant" name="frameworks_descendant" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="frameworks/base" name="frameworks_base" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="frameworks/av" name="frameworks_av" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="vendor/descendant" name="vendor_descendant" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="vendor/sounds" name="vendor_sounds" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="system/core" name="system_core" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="packages/apps/Utility" name="packages_apps_Utility" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="descendant" revision="TwoDotTwo_staging"  />
+  <project path="system/bt" name="system_bt" remote="descendant" revision="TwoDotTwo_staging" /> 
+  <project path="system/vold" name="system_vold" remote="descendant" revision="TwoDotTwo_staging" /> 
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="descendant" revision="TwoDotTwo_staging" /> 
+  <project path="system/netd" name="system_netd" remote="descendant" revision="TwoDotTwo_staging" /> 
+  <project path="frameworks/native" name="frameworks_native" remote="descendant" revision="TwoDotTwo_staging" /> 
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="descendant" revision="TwoDotTwo_staging" /> 
+  <project path="system/sepolicy" name="system_sepolicy" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="device/descendant/sepolicy" name="device_descendant_sepolicy" remote="descendant" revision="TwoDotTwo_staging" /> 
+  <project path="vendor/themes" name="vendor_themes" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="vendor/support" name="vendor_support" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="descendant" revision="TwoDotTwo_staging" />
+  <project path="packages/apps/Gestures" name="packages_apps_Gestures" remote="descendant" revision="TwoDotTwo_staging"/>
+  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="descendant" revision="TwoDotTwo_staging"/>
+  <project path="packages/apps/Pulse" name="packages_apps_Pulse" remote="descendant" revision="TwoDotTwo_staging"/>
+  <project path="packages/apps/CustomDoze" name="packages_apps_CustomDoze" remote="descendant" revision="TwoDotTwo_staging"/>
+  <project path="packages/apps/WeatherClient" name="packages_apps_WeatherClient" remote="descendant" revision="TwoDotTwo_staging"/>
   <project path="prebuilts/gradle" name="prebuilts_gradle" remote="descendant" revision="master"/>
-  
+  <project path="vendor/oem/extras" name="vendor_oem_extras" remote="descendant" revision="TwoDotTwo_staging"/>
+  <project path="hardware/qcom/power" name="hardware_qcom_power" remote="descendant" revision="TwoDotTwo_staging"/>   
   <!-- Sepolicy -->
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="descendant" revision="TwoDotOne_ds" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="descendant" revision="TwoDotTwo_staging" />
 
   <!-- OpenGApps -->  
   <remote name="opengapps" fetch="https://github.com/opengapps/"  />
