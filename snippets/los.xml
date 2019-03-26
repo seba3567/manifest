@@ -31,6 +31,7 @@
 
   <!-- Vendor -->
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="los" revision="lineage-16.0" />
+  <project path="vendor/com/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="los" revision="lineage-16.0"/>
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="los" revision="lineage-16.0" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="los" revision="lineage-16.0" />
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="los" revision="lineage-16.0" />
