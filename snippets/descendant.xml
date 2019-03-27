@@ -60,6 +60,8 @@
   <project path="prebuilts/gradle" name="prebuilts_gradle" remote="descendant" revision="master"/>
   <project path="vendor/oem/extras" name="vendor_oem_extras" remote="descendant" revision="TwoDotTwo_staging"/>
   <project path="hardware/qcom/power" name="hardware_qcom_power" remote="descendant" revision="TwoDotTwo_staging"/>   
+  <project path="hardware/qcom/camera" name="hardware_qcom_camera" remote="descendant" revisione="TwoDotTwo_staging" />
+
   <!-- Sepolicy -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="descendant" revision="TwoDotTwo_staging" />
 
