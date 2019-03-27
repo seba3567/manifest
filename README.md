@@ -8,7 +8,7 @@ Before getting started, please be sure to have the following packages in your OS
 ## Init our repo
 To start your own descendance, begin with:
 
-```repo init -u https://github.com/DescendantDeviceSpecific/manifest.git -b TwoDotOne_ds```
+```repo init -u https://github.com/DescendantDeviceSpecific/manifest.git -b TwoDotTwo_staging```
 
 Then sync it up with:
 
